@@ -1,0 +1,198 @@
+[gd_scene format=3 uid="uid://c8xskydtiofby"]
+
+[ext_resource type="Script" uid="uid://dn4in2vh1o56p" path="res://src/scenes/scripts_scenes/enter_name.gd" id="1_epdyc"]
+[ext_resource type="Texture2D" uid="uid://bg47lr8y81sds" path="res://Assets/Sprites/cubo pixel art cubismo.png" id="2_tpu8j"]
+
+[node name="EnterName" type="Control" unique_id=1496768206]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_epdyc")
+
+[node name="Background" type="ColorRect" parent="." unique_id=252837489]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.07058824, 0, 0.7607843, 1)
+
+[node name="SpriteContainer" type="BoxContainer" parent="." unique_id=900134202]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="cuboSprite2" type="Sprite2D" parent="SpriteContainer" unique_id=792772634]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(743.99994, 824.00006)
+rotation = 0.7487463
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="cuboSprite3" type="Sprite2D" parent="SpriteContainer" unique_id=1898016130]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(20.000006, 814)
+rotation = 0.13788101
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="cuboSprite4" type="Sprite2D" parent="SpriteContainer" unique_id=723926380]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(553, 1069)
+rotation = -0.69115037
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="cuboSprite5" type="Sprite2D" parent="SpriteContainer" unique_id=1824342650]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(41.000023, 1258.0001)
+rotation = -0.69115037
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="cuboSprite6" type="Sprite2D" parent="SpriteContainer" unique_id=1555862745]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(726.99994, 1301)
+rotation = -0.55152404
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="cuboSprite7" type="Sprite2D" parent="SpriteContainer" unique_id=485604333]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(378.00006, 1399.0001)
+rotation = 0.8290314
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="cuboSprite8" type="Sprite2D" parent="SpriteContainer" unique_id=988509372]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(52.00006, 1541.0001)
+rotation = 0.8290314
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="cuboSprite9" type="Sprite2D" parent="SpriteContainer" unique_id=1494032970]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(680, 1550)
+rotation = -0.6894051
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="SpriteContainer2" type="BoxContainer" parent="." unique_id=447695223]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="cuboSprite5" type="Sprite2D" parent="SpriteContainer2" unique_id=275063531]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(35.000015, 411.00003)
+rotation = -0.69115037
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="cuboSprite6" type="Sprite2D" parent="SpriteContainer2" unique_id=836128218]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(693, 93.00001)
+rotation = -0.55152404
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="cuboSprite7" type="Sprite2D" parent="SpriteContainer2" unique_id=1794366384]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(758, 460)
+rotation = 0.8290314
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="cuboSprite9" type="Sprite2D" parent="SpriteContainer2" unique_id=230535481]
+modulate = Color(0.07058824, 0, 0.7607843, 1)
+position = Vector2(151, 41.000008)
+rotation = -0.6894051
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_tpu8j")
+
+[node name="Titulo" type="Label" parent="." unique_id=1650418814]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -351.5
+offset_right = 351.5
+offset_bottom = 103.0
+grow_horizontal = 2
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 75
+text = "Ingresen miembros"
+horizontal_alignment = 1
+
+[node name="VBoxInterfaz" type="VBoxContainer" parent="." unique_id=1661514565]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -336.0
+offset_top = 100.0
+offset_right = 336.0
+offset_bottom = 303.0
+grow_horizontal = 2
+
+[node name="TextField" type="HBoxContainer" parent="VBoxInterfaz" unique_id=2085630528]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="addButton" type="Button" parent="VBoxInterfaz/TextField" unique_id=414716754]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 64
+text = " OK "
+
+[node name="LineEdit" type="LineEdit" parent="VBoxInterfaz/TextField" unique_id=983630496]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+placeholder_text = "   nombre...    "
+alignment = 1
+max_length = 16
+expand_to_text_length = true
+
+[node name="PlayerNumbers" type="LineEdit" parent="VBoxInterfaz/TextField" unique_id=278297303]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+placeholder_text = " Cantidad "
+alignment = 1
+max_length = 2
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="PlayerList" type="VBoxContainer" parent="VBoxInterfaz" unique_id=824306995]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="BotonesAparte" type="VBoxContainer" parent="." unique_id=54363765]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -92.0
+offset_top = -96.0
+offset_right = 92.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="readyButton" type="Button" parent="BotonesAparte" unique_id=1093979975]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 64
+text = "LISTO"
+
+[connection signal="pressed" from="VBoxInterfaz/TextField/addButton" to="." method="_on_add_button_pressed"]
+[connection signal="pressed" from="BotonesAparte/readyButton" to="." method="_on_ready_button_pressed"]

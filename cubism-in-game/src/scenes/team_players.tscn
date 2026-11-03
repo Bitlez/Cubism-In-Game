@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://bkd04n3gxwsvp"]
+
+[ext_resource type="Script" uid="uid://cwoohfk2y2ruu" path="res://src/scenes/scripts_scenes/team_players.gd" id="1_gkbwj"]
+[ext_resource type="Texture2D" uid="uid://bg47lr8y81sds" path="res://Assets/Sprites/cubo pixel art cubismo.png" id="2_jsv37"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4v7s"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="TeamPlayers" type="Control" unique_id=1492007784]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gkbwj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1625324525]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.3187846, 0.71254843, 1)
+
+[node name="SpriteContainer" type="BoxContainer" parent="." unique_id=304965254]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="cuboSprite2" type="Sprite2D" parent="SpriteContainer" unique_id=1157411806]
+modulate = Color(0, 0.31764707, 0.7137255, 1)
+position = Vector2(743.99994, 824.00006)
+rotation = 0.7487463
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_jsv37")
+
+[node name="cuboSprite3" type="Sprite2D" parent="SpriteContainer" unique_id=1452959812]
+modulate = Color(0, 0.31764707, 0.7137255, 1)
+position = Vector2(20.000006, 814)
+rotation = 0.13788101
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_jsv37")
+
+[node name="cuboSprite4" type="Sprite2D" parent="SpriteContainer" unique_id=1238578133]
+modulate = Color(0, 0.31764707, 0.7137255, 1)
+position = Vector2(553, 1069)
+rotation = -0.69115037
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_jsv37")
+
+[node name="cuboSprite5" type="Sprite2D" parent="SpriteContainer" unique_id=808578117]
+modulate = Color(0, 0.31764707, 0.7137255, 1)
+position = Vector2(41.000023, 1258.0001)
+rotation = -0.69115037
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_jsv37")
+
+[node name="cuboSprite6" type="Sprite2D" parent="SpriteContainer" unique_id=1761857463]
+modulate = Color(0, 0.31764707, 0.7137255, 1)
+position = Vector2(726.99994, 1301)
+rotation = -0.55152404
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_jsv37")
+
+[node name="cuboSprite7" type="Sprite2D" parent="SpriteContainer" unique_id=948423156]
+modulate = Color(0, 0.31764707, 0.7137255, 1)
+position = Vector2(378.00006, 1399.0001)
+rotation = 0.8290314
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_jsv37")
+
+[node name="cuboSprite8" type="Sprite2D" parent="SpriteContainer" unique_id=682589804]
+modulate = Color(0, 0.31764707, 0.7137255, 1)
+position = Vector2(52.00006, 1541.0001)
+rotation = 0.8290314
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_jsv37")
+
+[node name="cuboSprite9" type="Sprite2D" parent="SpriteContainer" unique_id=1375661802]
+modulate = Color(0, 0.31764707, 0.7137255, 1)
+position = Vector2(680, 1550)
+rotation = -0.6894051
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_jsv37")
+
+[node name="VBoxInterfaz" type="VBoxContainer" parent="." unique_id=128124947]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="Title" type="Label" parent="VBoxInterfaz" unique_id=1452920642]
+layout_mode = 2
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 100
+horizontal_alignment = 1
+
+[node name="PlayerBox" type="Panel" parent="VBoxInterfaz" unique_id=1844420024]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4v7s")
+
+[node name="PlayerList" type="VBoxContainer" parent="VBoxInterfaz/PlayerBox" unique_id=482209485]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="BotonAparte" type="VBoxContainer" parent="." unique_id=759845101]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="WaitingLabel" type="Label" parent="BotonAparte" unique_id=1432893449]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+
+[node name="ReadyButton" type="Button" parent="BotonAparte" unique_id=1251291829]
+layout_mode = 2
+theme_override_font_sizes/font_size = 90
+text = "LISTOS"
+
+[connection signal="pressed" from="BotonAparte/ReadyButton" to="." method="_on_ready_button_pressed"]

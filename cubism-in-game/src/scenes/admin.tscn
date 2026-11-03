@@ -1,0 +1,248 @@
+[gd_scene format=3 uid="uid://b4wf0ksop7gxp"]
+
+[ext_resource type="Script" uid="uid://cvr4tmufhcc3e" path="res://src/scenes/scripts_scenes/admin.gd" id="1_adsh7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mkubl"]
+bg_color = Color(0.8666667, 0.96862745, 0, 0.654902)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_adsh7"]
+bg_color = Color(0, 0.49411765, 0, 0.6313726)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6r17q"]
+bg_color = Color(0.47137457, 0.7709004, 1, 0.5176471)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gaa12"]
+bg_color = Color(0, 0.6666667, 0.5803922, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6rp1d"]
+bg_color = Color(0, 0.11764706, 0.09803922, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8bfjy"]
+bg_color = Color(0, 0.6666667, 0.5803922, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p8b23"]
+bg_color = Color(0, 0.11764706, 0.09803922, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ed5d"]
+bg_color = Color(0.9098039, 0.3137255, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hn128"]
+bg_color = Color(0.2901961, 0.078431375, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_08qhl"]
+bg_color = Color(0.9098039, 0.3137255, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o7rtp"]
+bg_color = Color(0.2901961, 0.078431375, 0, 1)
+
+[node name="Admin" type="Control" unique_id=189450967]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_adsh7")
+
+[node name="Background" type="ColorRect" parent="." unique_id=365938238]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.627451, 0.39607844, 1, 1)
+
+[node name="Title" type="Label" parent="." unique_id=1579788722]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 45
+text = "ZONA ADMIN"
+
+[node name="ScoreTeam2" type="Label" parent="." unique_id=2044167147]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 1176.0
+offset_right = 523.0
+offset_bottom = 1245.0
+theme_override_colors/font_color = Color(0.9098039, 0.3137255, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 50
+text = "Puntos Equipo 2:"
+
+[node name="ScoreTeam1" type="Label" parent="." unique_id=122426196]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 1088.0
+offset_right = 523.0
+offset_bottom = 1157.0
+theme_override_colors/font_color = Color(0, 0.6666667, 0.5803922, 1)
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 50
+text = "Puntos Equipo 1:"
+
+[node name="PlayersConnected" type="HBoxContainer" parent="." unique_id=205107403]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 60.0
+offset_right = 20.0
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_constants/separation = 200
+alignment = 1
+
+[node name="player1" type="Label" parent="PlayersConnected" unique_id=434481331]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+
+[node name="player2" type="Label" parent="PlayersConnected" unique_id=286030054]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+
+[node name="TeamsSelected" type="HBoxContainer" parent="." unique_id=2120300183]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 128.0
+offset_right = 203.0
+offset_bottom = 168.0
+theme_override_constants/separation = 200
+alignment = 1
+
+[node name="Team1" type="Label" parent="TeamsSelected" unique_id=947704034]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+
+[node name="Team2" type="Label" parent="TeamsSelected" unique_id=931018465]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+
+[node name="VBoxInterfaz2" type="VBoxContainer" parent="." unique_id=1767947969]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -213.0
+offset_top = -173.5
+offset_right = 213.0
+offset_bottom = 95.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="QuestionInGame" type="Label" parent="VBoxInterfaz2" unique_id=742287184]
+layout_mode = 2
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_mkubl")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="CorrectAnswer" type="Label" parent="VBoxInterfaz2" unique_id=602801791]
+layout_mode = 2
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_adsh7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="FirstTeamAnswer" type="Label" parent="VBoxInterfaz2" unique_id=1423233383]
+layout_mode = 2
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_6r17q")
+horizontal_alignment = 1
+
+[node name="BotonesDecisivos" type="HBoxContainer" parent="VBoxInterfaz2" unique_id=763432659]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="BotonPuntajesT1" type="VBoxContainer" parent="VBoxInterfaz2/BotonesDecisivos" unique_id=1214493640]
+layout_mode = 2
+
+[node name="getPointsT1" type="Button" parent="VBoxInterfaz2/BotonesDecisivos/BotonPuntajesT1" unique_id=1149708150]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_gaa12")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6rp1d")
+text = "Dar puntos"
+
+[node name="transferPointsT1" type="Button" parent="VBoxInterfaz2/BotonesDecisivos/BotonPuntajesT1" unique_id=1842451842]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_8bfjy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_p8b23")
+text = "Transferirlos
+al otro"
+
+[node name="BotonPuntajesT2" type="VBoxContainer" parent="VBoxInterfaz2/BotonesDecisivos" unique_id=1398463084]
+layout_mode = 2
+
+[node name="getPointsT2" type="Button" parent="VBoxInterfaz2/BotonesDecisivos/BotonPuntajesT2" unique_id=115325300]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_2ed5d")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hn128")
+text = "Dar puntos"
+
+[node name="transferPointsT2" type="Button" parent="VBoxInterfaz2/BotonesDecisivos/BotonPuntajesT2" unique_id=1831129842]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_08qhl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_o7rtp")
+text = "Transferirlos
+al otro"
+
+[node name="VBoxInterfaz1" type="VBoxContainer" parent="." unique_id=1260791502]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 12
+
+[node name="Aviso" type="Label" parent="VBoxInterfaz1" unique_id=1924676869]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Host creado:
+"
+horizontal_alignment = 1
+
+[node name="hostButton" type="Button" parent="VBoxInterfaz1" unique_id=1635024235]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Crear host"
+
+[node name="backButton" type="Button" parent="VBoxInterfaz1" unique_id=1538288002]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Volver"
+
+[connection signal="pressed" from="VBoxInterfaz2/BotonesDecisivos/BotonPuntajesT1/getPointsT1" to="." method="_on_get_points_t_1_pressed"]
+[connection signal="pressed" from="VBoxInterfaz2/BotonesDecisivos/BotonPuntajesT1/transferPointsT1" to="." method="_on_transfer_points_t_1_pressed"]
+[connection signal="pressed" from="VBoxInterfaz2/BotonesDecisivos/BotonPuntajesT2/getPointsT2" to="." method="_on_get_points_t_2_pressed"]
+[connection signal="pressed" from="VBoxInterfaz2/BotonesDecisivos/BotonPuntajesT2/transferPointsT2" to="." method="_on_transfer_points_t_2_pressed"]
+[connection signal="pressed" from="VBoxInterfaz1/hostButton" to="." method="_on_host_button_pressed"]
+[connection signal="pressed" from="VBoxInterfaz1/backButton" to="." method="_on_back_button_pressed"]
